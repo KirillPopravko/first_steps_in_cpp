@@ -1,16 +1,18 @@
 // FirstStepsInCPP.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include <iostream>
+#include "std_lib_facilities.h"
+
 bool is_even(int x) {
     bool result = (x % 2) == 0;
     return result;
 }
+
 int main()
 {
     int number = 7;
-    std::cout << "First Steps in CPP\n";
-    std::cout << "Is " << number << " even?\n";
+    cout << "First Steps in CPP\n";
+    cout << "Is " << number << " even?\n";
     bool number_is_even = is_even(number);
     if ( number_is_even ) {
         std::cout << "Yes.\n";

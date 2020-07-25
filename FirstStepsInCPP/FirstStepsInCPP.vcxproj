@@ -72,6 +72,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>book_headers;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -140,6 +141,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="FirstStepsInCPP.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="book_headers\fltk.h" />
+    <ClInclude Include="book_headers\Graph.h" />
+    <ClInclude Include="book_headers\Gui.h" />
+    <ClInclude Include="book_headers\Matrix.h" />
+    <ClInclude Include="book_headers\Matrix11.h" />
+    <ClInclude Include="book_headers\MatrixIO.h" />
+    <ClInclude Include="book_headers\MatrixIO11.h" />
+    <ClInclude Include="book_headers\Point.h" />
+    <ClInclude Include="book_headers\Simple_window.h" />
+    <ClInclude Include="book_headers\std_lib_facilities.h" />
+    <ClInclude Include="book_headers\Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
