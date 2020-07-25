@@ -2,10 +2,23 @@
 //
 
 #include <iostream>
-
+bool is_even(int x) {
+    bool result = (x % 2) == 0;
+    return result;
+}
 int main()
 {
+    int number = 7;
+    std::cout << "First Steps in CPP\n";
+    std::cout << "Is " << number << " even?\n";
+    bool number_is_even = is_even(number);
+    if ( number_is_even ) {
+        std::cout << "Yes.\n";
+    } else {
+		std::cout << "No.\n";
+	}
     std::cout << "Welcome to Amsterdam\n";
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
