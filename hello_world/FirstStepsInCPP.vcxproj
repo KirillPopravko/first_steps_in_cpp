@@ -18,16 +18,12 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\hello_world\hello_world.cpp" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{400faec0-8b68-4016-b315-7eb7136d8534}</ProjectGuid>
     <RootNamespace>FirstStepsInCPP</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>hello_world</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -76,7 +72,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>../book_headers;$(IncludePath)</IncludePath>
+    <IncludePath>book_headers;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -143,6 +139,22 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="hello_world.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="book_headers\fltk.h" />
+    <ClInclude Include="book_headers\Graph.h" />
+    <ClInclude Include="book_headers\Gui.h" />
+    <ClInclude Include="book_headers\Matrix.h" />
+    <ClInclude Include="book_headers\Matrix11.h" />
+    <ClInclude Include="book_headers\MatrixIO.h" />
+    <ClInclude Include="book_headers\MatrixIO11.h" />
+    <ClInclude Include="book_headers\Point.h" />
+    <ClInclude Include="book_headers\Simple_window.h" />
+    <ClInclude Include="book_headers\std_lib_facilities.h" />
+    <ClInclude Include="book_headers\Window.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

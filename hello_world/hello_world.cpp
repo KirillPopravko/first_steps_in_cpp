@@ -1,5 +1,11 @@
-// hello_world.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
+
+
+
+
+
+
+
 
 #include "std_lib_facilities.h"
 
@@ -14,11 +20,12 @@ int main()
     cout << "First Steps in CPP\n";
     cout << "Is " << number << " even?\n";
     bool number_is_even = is_even(number);
-    if ( number_is_even ) {
+    if (number_is_even) {
         std::cout << "Yes.\n";
-    } else {
-		std::cout << "No.\n";
-	}
+    }
+    else {
+        std::cout << "No.\n";
+    }
     std::cout << "Welcome to Amsterdam\n";
     return 0;
 }
