@@ -19,4 +19,39 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="book_headers\fltk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="book_headers\Graph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="book_headers\Gui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="book_headers\Matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="book_headers\Matrix11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="book_headers\MatrixIO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="book_headers\MatrixIO11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="book_headers\Point.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="book_headers\Simple_window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="book_headers\std_lib_facilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="book_headers\Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
