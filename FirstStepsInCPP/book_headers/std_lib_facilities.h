@@ -208,9 +208,11 @@ template<class R, class A> R narrow_cast(const A& a)
 
 // random number generators. See 24.7.
 
-
-
-inline int randint(int min, int max) { static default_random_engine ran; return uniform_int_distribution<>{min, max}(ran); }
+inline int randint(int min, int max) { 
+  static random_device r;
+  static default_random_engine ran(r());
+  return uniform_int_distribution<>{min, max}(ran);
+}
 
 inline int randint(int max) { return randint(0, max); }
 
