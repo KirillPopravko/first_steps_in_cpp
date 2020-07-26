@@ -1,5 +1,5 @@
 flags=-Wall -g -std=c++14 
-programs=hello_world assignment1
+programs=hello_world assignment1 assignment2
 
 all: $(programs)
 
