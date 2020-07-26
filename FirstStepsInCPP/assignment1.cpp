@@ -16,7 +16,6 @@ int main()
     cout << "> ";
     cin >> guess;
     if (guess == answer) {
-      cout << "Congratulations!" << endl;
       break;
     } else {
       // TODO
@@ -26,4 +25,5 @@ int main()
       // TODO track number of guesses so we can print it just before 'congratulations'
     }
   }
+  cout << "Congratulations!" << endl;
 }
