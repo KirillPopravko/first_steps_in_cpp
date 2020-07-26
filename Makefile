@@ -1,2 +1,7 @@
-all:
-	clang++ FirstStepsInCPP/*.cpp -Wall -std=c++14 -o Debug/main.exe -IFirstStepsInCPP/book_headers/
+flags=-Wall -g -std=c++14 
+programs=hello_world assignment1
+
+all: $(programs)
+
+$(programs):
+	clang++ FirstStepsInCPP/$@.cpp $(flags) -o Debug/$@ -IFirstStepsInCPP/book_headers/
